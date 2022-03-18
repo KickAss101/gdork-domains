@@ -15,7 +15,7 @@ def main():
     parser.add_argument("-f","--file",help="provide file with list of dorks")
     parser.add_argument("-d","--dork",help="provide single dork")
     parser.add_argument("-n","--no-domains",help="Number of domains to enumerate (optional)",type=int,default=50)
-    parser.add_argument("-t","--tld",help=" (optional)",type=str,default="com")
+    parser.add_argument("-t","--tld",help="google TLD (optional)",type=str,default="com")
     args = parser.parse_args()
 
     if args.file is None and args.dork is None:
